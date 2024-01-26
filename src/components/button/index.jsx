@@ -6,7 +6,7 @@ function Button({ name, type, onClick }) {
   return (
     <button
       className={`Button ${type}`}
-      onClick={onClick}
+      onClick={() => onClick()}
     >
       {name}
     </button>
@@ -16,6 +16,7 @@ function Button({ name, type, onClick }) {
 Button.propTypes = {
   value: PropTypes.string,
   type: PropTypes.string,
+  onClick: PropTypes.func
 }
 
 export default memo(Button);

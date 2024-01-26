@@ -1,0 +1,41 @@
+.Persons {
+	display: grid;
+  grid-template-rows: 150px 150px;
+	margin: 1% auto;
+}
+
+.Persons-person {
+	background-color: rgb(196, 238, 196);
+	width: 90%;
+	height: 120px;
+	border: 1px black solid;
+	padding: 10px;
+}
+
+.Persons-person-item {
+	padding-bottom: 5px;
+}
+
+@media screen and (min-width : 1024px) {
+	.Persons {
+		grid-template-columns: 25% 25% 25% 25%;
+	}
+}
+
+@media screen and (max-width : 1024px) and (min-width: 769px) {
+	.Persons {
+		grid-template-columns: 33.3333% 33.3333% 33.3333%;
+	}
+}
+
+@media screen and (max-width : 768px) and (min-width: 431px) {
+	.Persons {
+		grid-template-columns: 50% 50%;
+	}
+}
+
+@media screen and (max-width : 430px) {
+	.Persons {
+		grid-template-columns: 100%;
+	}
+}
